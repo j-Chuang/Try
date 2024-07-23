@@ -1,0 +1,603 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto 0;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+body{
+  line-height: 1.5;
+  font-family: 'SF Pro Text','PingFang TC',sans-serif;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.fs-32{
+  font-size: 32px;
+}
+.fs-40{
+  font-size: 40px;
+}
+.fc-white{
+  color: #FFF;
+}
+.fc-gray{
+  color: #8D8D8D;
+}
+.fc-brown{
+  color: #916000;
+}
+.fc-lightbrown{
+  color: #AC8A46;
+}
+.font-light{
+  font-weight: 300;
+}
+.font-medium{
+  font-weight: 500;
+}
+.font-semibold{
+  font-weight: 600;
+}
+.font-bold{
+  font-weight: 700;
+}
+.d-flex{
+  display: flex;
+}
+.fxd-c{
+  flex-direction: column;
+}
+.jc-c{
+  justify-content: center;
+}
+.jc-sb{
+  justify-content: space-between;
+}
+.ai-c{
+  align-items: center;
+}
+.fxw-w{
+  flex-wrap: wrap;
+}
+.d-block{
+  display: block;
+}
+.d-in-block{
+  display: inline-block;
+}
+.plpr-110{
+  padding: 0 110px;
+}
+.mb-2{
+  margin-bottom: 2px;
+}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media screen and (max-width:767px) {
+  .container{
+    padding: 0 15px;
+  }
+}
+
+/* Index Page */
+.header{
+  text-align: center;
+}
+.header ul{
+  gap: 32px;
+}
+.header-link a{
+  padding: 16px 0;
+  line-height: 1.2;
+}
+.mobile-header-icons{
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .header-link{
+    display: none;
+  }
+  .mobile-header-icons{
+    display: flex;
+    align-items: center;
+  }
+  .mobile-header-icons a{
+    display: flex;
+    align-items: center;
+  }
+  .cart-icon-with-number{
+    position: relative;
+  }
+  .cart-icon-with-number::after{
+    position: absolute;
+    left: 60%;
+    bottom: 60%;
+    width: 16px;
+    height: 16px;
+    background-color: #916000;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 40%;
+    content: "3";
+  }
+}
+.bg-banner{
+  height: 870px;
+  max-width: 100%;
+  background: url(./images/laura-chouette-Vze5s6SCrI8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-container{
+  height: 100%;
+  justify-content: flex-end;
+}
+.banner-content{
+  width: 37%;
+}
+.banner-content .btn{
+  width: 81%;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  background-color: transparent;
+  margin-top: 16px;
+  line-height: 1.8;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .bg-banner{
+    height: 480px;
+  }
+  .banner-container{
+    justify-content:center
+  }
+  .banner-content{
+    width: 100%;
+  }
+  .banner-content .btn{
+    width: 100%;
+  }
+}
+.examples{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.examples ul
+.examples li{
+  width: 100%;
+  /* max-height: 555px; */
+}
+.example-content{
+  width: 50%;
+}
+.example-img{
+  width: 50%;
+}
+.example-content section{
+  width: 63%;
+  /* height: 100%;   */
+}
+.example-content section a{
+  margin-top: 16px;
+}
+/* .examples img{
+  max-height: 100%;
+} */
+.examples li:nth-child(4) p{
+  margin-bottom: 15px;
+}
+.example-content input{
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  line-height: 2.2;
+  cursor: pointer;
+}
+@media screen and (max-width:767px) {
+  .mobile-examples-wrap:nth-child(odd){
+    flex-direction: column-reverse;
+  }
+  .example-content{
+    width: 100%;
+    margin-top: 8px;
+  }
+  .example-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .example-content section{
+    width: 100%;
+  }
+  .example-content section a{
+    margin-bottom: 32px;
+  }
+}
+
+.bg-products{
+  background-color: #E0E0E0;
+  /* height: 728px; */
+}
+.products{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.products li{
+  height: 648px;
+  width: 32%;
+}
+.products li:nth-child(1) .product-img{
+  background-image: url(./images/hyunwon-jang-t8ueo1LnzEU-unsplash.jpg);
+}
+.products li:nth-child(2) .product-img{
+  background-image: url(./images/curology-thYEvBllQo0-unsplash.jpg);
+}
+.products li:nth-child(3) .product-img{
+  background-image: url(./images/the-tonik-g_CQmXitF9o-unsplash.jpg);
+}
+.product-img{
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.sold-out{
+  position: relative;
+}
+.sold-out::after{
+  position: absolute;
+  background-image: url(./images/photo-1559264730-1533a6ec0433.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.sold-out::before{
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "Sold out";
+  z-index: 2;
+}
+.product-info{
+  height: 100px;
+  margin-top: 8px;
+}
+.price-column{
+  gap: 8px;
+}
+.price-linethrough{
+  text-decoration: line-through;
+}
+@media screen and (max-width:767px) {
+  .products{
+    padding-top: 32px;
+    padding-bottom: 36px;
+    }
+  .products li{
+    height: 446px;
+    width: 100%;
+    margin-bottom: 32px;
+    }    
+  .product-img{
+    height: 350px;
+  }
+  .products li:nth-child(1) .product-img{
+    background-position: bottom center;  
+  } 
+  .products li:nth-child(2) .product-img{
+    background-position: bottom center;  
+  } 
+}
+
+.features{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.feature-container{
+  gap: 30px;
+}
+.feature-img{
+  width: 720px;
+  height: 520px;
+  background-image: url(./images/laura-chouette-rXFwio30yDw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.feature-content{
+  width: 32%;
+}
+.feature-content p{
+  margin-bottom: 16px;
+}
+@media screen and (max-width:767px) {
+  .features{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .feature-container{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .feature-img{
+    width: 100%;
+  }
+  .feature-content{
+    width: 100%;
+  }
+}
+
+.bg-subscribe{
+  height: 600px;
+  background-image: url(./images/anis-m-WnVrO-DvxcE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.subscribe{
+  padding-top: 312px;
+}
+.subscribe-content{
+  width: 32%;
+}
+.subscribe-input-bar{
+  border: 2px solid #916000;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.subscribe-input{
+  width: 63%;
+  height: 60px;
+  border: none;
+  padding-left: 16px;
+  font-weight: 500;
+}
+.subscribe-btn{
+  width: 37%;
+  height: 60px;
+  color: white;
+  font-weight: 500;
+  background-color: #916000;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width:767px) {
+  .subscribe-content{
+    width: 100%;
+  }
+  .bg-subscribe{
+    background-position: left bottom;
+  }
+}
+
+.bg-footer{
+  background-color: #916000;
+  height: 80px;
+}
+.footer, .footer-content{
+  height: 100%;
+}
+.footer-logo-reserved{
+  gap: 20px;
+}
+.footer-link{
+  gap: 36px;
+}
+.footer-logo-reserved a{
+  padding: 28px 0;
+}
+.footer-link a{
+  padding: 28px 0;
+}
+@media screen and (max-width:767px) {
+  .footer-link{
+    display: none;
+  }
+  .footer-logo-reserved{
+    width: 100%;
+  }
+}
+
+/* PRODUCT PAGE */
+.bg-menu{
+  background-color: #916000;
+}
+.menu-content{
+  gap: 28px;
+}
+.menu-content a{
+  padding: 14px 0;
+}
+@media screen and (max-width:767px) {
+  .bg-menu{
+    display: none;
+  }
+}
+
+.main{
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.product-cards{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.card-container{
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 58px;
+}
+.card-container:nth-child(1) .card-img{
+  background-image: url(./images/charlesdeluvio-3IMl0kCxpHQ-unsplash.jpg);
+}
+.card-container:nth-child(2) .card-img{
+  background-image: url(./images/hyunwon-jang-t8ueo1LnzEU-unsplash.jpg);
+}
+.card-container:nth-child(3) .card-img{
+  background-image: url(./images/laurissi-CVz2Ove_NuI-unsplash.jpg);
+}
+.card-container:nth-child(4) .card-img{
+  background-image: url(./images/laura-chouette-3rpmeLFPeQI-unsplash.jpg);
+}
+.card-container:nth-child(5) .card-img{
+  background-image: url(./images/kelvin-lutan-5f4yovjJw4c-unsplash.jpg);
+}
+.card-container:nth-child(6) .card-img{
+  background-image: url(./images/erin-east-14YmL-R6MCc-unsplash.jpg);
+}
+.card-container:nth-child(7) .card-img{
+  background-image: url(./images/laura-chouette-WbQWMVc71kw-unsplash.jpg);
+}
+.card-container:nth-child(8) .card-img{
+  background-image: url(./images/maxim-lozyanko-qFsxwpoDIB4-unsplash.jpg);
+}
+.card-container:nth-child(9) .card-img{
+  background-image: url(./images/why-no-picture.png);
+}
+.card-container:nth-child(10) .card-img{
+  background-image: url(./images/april-c-9XitDoap1xA-unsplash.jpg);
+}
+.card-container:nth-child(11) .card-img{
+  background-image: url(./images/the-tonik-A16IxicPOfY-unsplash.jpg);
+}
+.card-container:nth-child(12) .card-img{
+  background-image: url(./images/laura-chouette-qoA-Vg06kdE-unsplash.jpg);
+}
+.card-img-style{
+  width: 100%;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.card-container:nth-child(2) .card-img{
+  background-position: bottom center;
+}
+.card-container:nth-child(6) .card-img{
+  background-position: left center;
+}
+.card span{
+  cursor: pointer;
+}
+.tags{
+  gap: 20px;
+}
+.tags a{
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+.active-lightbrown.active-lightbrown{
+  color:#AC8A46;
+  border-bottom: 2px solid #AC8A46;
+}
+.tags a:hover{
+  color:#AC8A46;
+  border-bottom: 2px solid #AC8A46;
+}
+@media screen and (max-width:767px) {
+  .main{
+    padding-top: 42px;
+    padding-bottom: 40px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  
+  }
+  .product-cards{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .card-container{
+    width: 50%;
+    padding-left: 7.5px;
+    padding-right:7.5px;
+    padding-bottom: 30px;
+  }
+  .card-img-style{
+    height: 165px;
+  }
+}
